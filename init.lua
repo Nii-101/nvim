@@ -9,8 +9,6 @@ require('packer').startup(function(use)
   vc [[colorscheme dracula]]
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-lualine/lualine.nvim'
-  use 'junegunn/fzf'
-  use 'junegunn/fzf.vim'
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
@@ -18,11 +16,13 @@ require('packer').startup(function(use)
     }
 
   use 'hrsh7th/nvim-cmp'
-  use("hrsh7th/cmp-buffer") -- source for text in buffer
-  use("hrsh7th/cmp-path") -- source for file system paths
-  use("L3MON4D3/LuaSnip") -- snippet engine
-  use("saadparwaiz1/cmp_luasnip") -- for autocompletion
-  use("rafamadriz/friendly-snippets") -- useful snippets
+  use('hrsh7th/cmp-buffer')
+  use('hrsh7th/cmp-path')
+  use('L3MON4D3/LuaSnip')
+  use('saadparwaiz1/cmp_luasnip')
+  use('rafamadriz/friendly-snippets')
+  use('nvim-tree/nvim-tree.lua')
+  use('nvim-tree/nvim-web-devicons')
 
 end)
 
@@ -33,3 +33,5 @@ require('duller.plugins.lualine')
 require('duller.plugins.mason')
 require('duller.plugins.lspconfig')
 require('duller.plugins.nvim-cmp')
+require('duller.plugins.nvim-tree')
+require('duller.plugins.nvim-web-devicons')

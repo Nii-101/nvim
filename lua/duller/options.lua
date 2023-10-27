@@ -1,4 +1,6 @@
 local opt = vim.opt
+local g = vim.g
+local cmd = vim.cmd
 
 opt.number = true
 opt.relativenumber = true
@@ -20,3 +22,7 @@ opt.signcolumn = "yes"
 opt.splitright = true
 opt.splitbelow = true
 opt.clipboard:append("unnamedplus")
+
+-- Disable Netrw
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
