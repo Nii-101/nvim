@@ -5,8 +5,9 @@ vc [[packadd packer.nvim]]
 
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'dracula/vim'
-  vc [[colorscheme dracula]]
+  use 'nyoom-engineering/oxocarbon.nvim'
+  vc [[colorscheme oxocarbon]]
+
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-lualine/lualine.nvim'
   use {
