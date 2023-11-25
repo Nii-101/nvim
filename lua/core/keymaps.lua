@@ -1,4 +1,5 @@
 local keymap = vim.keymap
+local builtin = require('telescope.builtin')
 
 -- Set leader key to Space
 vim.g.mapleader = ' '
@@ -39,3 +40,14 @@ keymap.set('n', '<leader>tn', ':tabn<CR>')
 
 -- Go to previous tab
 keymap.set('n', '<leader>tp', ':tabp<CR>')
+
+-- Reconfig half page vertical movements to center cursor
+keymap.set('n', '<C-d>', '<C-d>zz')
+keymap.set('n', '<C-u>', '<C-u>zz')
+keymap.set('n', 'n', 'nzz')
+
+-- For telescope
+keymap.set('n', '<leader>ff', builtin.find_files, {})
+keymap.set('n', '<leader>fg', builtin.live_grep, {})
+keymap.set('n', '<leader>fb', builtin.buffers, {})
+keymap.set('n', '<leader>fh', builtin.help_tags, {})

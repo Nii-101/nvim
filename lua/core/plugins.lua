@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   'wbthomason/packer.nvim',
-  'nyoom-engineering/oxocarbon.nvim',
+  'vimoxide/vim-cinnabar',
   'nvim-treesitter/nvim-treesitter',
   'nvim-lualine/lualine.nvim',
   'williamboman/mason.nvim',
@@ -27,6 +27,11 @@ local plugins = {
   'rafamadriz/friendly-snippets',
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
+  {
+    'nvim-telescope/telescope.nvim',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+  },
+  'mg979/vim-visual-multi'
 }
 
 local opts = {}

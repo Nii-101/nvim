@@ -5,7 +5,7 @@ local cmd = vim.cmd
 opt.number = true
 opt.relativenumber = true
 opt.list = true
-opt.listchars:append('tab:> ')
+
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = false
@@ -28,5 +28,5 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
 -- Theme
-opt.background = "dark" -- set this to dark or light
-cmd("colorscheme oxocarbon")
+opt.background = "dark"
+cmd("colorscheme cinnabar")
