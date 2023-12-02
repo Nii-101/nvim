@@ -3,7 +3,7 @@ local g = vim.g
 local cmd = vim.cmd
 
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 opt.list = true
 
 opt.tabstop = 4
@@ -29,4 +29,4 @@ g.loaded_netrwPlugin = 1
 
 -- Theme
 opt.background = "dark"
-cmd("colorscheme cinnabar")
+cmd("colorscheme sonokai")
