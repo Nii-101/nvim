@@ -29,4 +29,4 @@ g.loaded_netrwPlugin = 1
 
 -- Theme
 opt.background = "dark"
-cmd("colorscheme sonokai")
+cmd("colorscheme night-owl")

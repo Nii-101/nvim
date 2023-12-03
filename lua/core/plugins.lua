@@ -27,6 +27,7 @@ local plugins = {
   'rafamadriz/friendly-snippets',
   'nvim-tree/nvim-tree.lua',
   'sainnhe/sonokai',
+  'haishanh/night-owl.vim',
   'nvim-tree/nvim-web-devicons',
   {
     'nvim-telescope/telescope.nvim',
